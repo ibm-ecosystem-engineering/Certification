@@ -1,9 +1,9 @@
 # Tips & Tricks - Openshift
 
-## Practice clusters (This recoommendation  is just for certification purposes)
+## Practice clusters 
 ### Which cluster should you use to practice for certification?
 
-#### - Avoid using IBM Cloud clusters, mainly because cloud clusters add some customizations which will make it different from the one you will get in certification. If you are an expert user, who can deal with the customizations, it's not an issue.
+#### - IBM Cloud clusters: Understand IBM adds some customizations which will make it different from the one you will get in certification. Ex: RBAC roles, CNI (IBM Cloud uses calico), Persistent Storage using cloud storage classes etc.
 #### - Use https://learn.openshift.com/ for most exercises, but here you get only single node clusters
 #### - Fyre clusters 
 

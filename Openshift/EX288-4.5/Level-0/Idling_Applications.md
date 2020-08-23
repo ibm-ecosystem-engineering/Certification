@@ -41,5 +41,10 @@ oc idle service nginx
 oc scale --replicas=3 dc nginx 
 ```
 
+#### - Automatic unidyling of services (doesn't seem to work)
+```
+curl $(oc get route nginx -o jsonpath='{.spec.host}')
+```
+
 </p>
 </details

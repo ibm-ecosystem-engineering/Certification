@@ -15,7 +15,10 @@
 
 ## How-To's
 
-### [Build Strategies](https://github.com/abalasu1/Openshift/blob/master/4.x/build-strategies/build.md)
+### Build Strategies
+
+#### [Docker Build](https://github.com/abalasu1/Openshift/blob/master/4.x/build-strategies/build.md)
+#### [Binary Build](https://github.com/abalasu1/Openshift/blob/master/4.x/build-strategies/build.md#binary-build)
 
 ## EX 288-4.5
 

@@ -5,7 +5,6 @@
 
 #### - IBM Cloud clusters: Understand IBM adds some customizations which will make it different from the one you will get in certification. Ex: RBAC roles, CNI (IBM Cloud uses calico), Persistent Storage using cloud storage classes etc.
 #### - Use https://learn.openshift.com/ for most exercises, but here you get only single node clusters
-#### - Fyre clusters 
 
 
 ## How to create deployments, jobs & pods 

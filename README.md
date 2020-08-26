@@ -3,7 +3,7 @@
 ## Common
 
 ### Applicaions
-#### [Simple Spring Boot Program](https://github.com/ibm-gsi-ecosystem/Certification/tree/master/Openshift/apps/Sample-Spring-Boot)
+#### [Simple Spring Boot Program](https://github.com/ibm-gsi-ecosystem/Certification/tree/master/Openshift/apps/Simple-SpringBoot-App)
 
 ## Tips & Tricks
 
@@ -12,13 +12,14 @@
 
 ### Productivity
 #### [Create apps with cli](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Tips%20%26%20Tricks.md#how-to-create-deployments-jobs--pods)
+#### [Create Aliases]()
 
 ## How-To's
 
 ### Build Strategies
 
-#### [Docker Build](https://github.com/abalasu1/Openshift/blob/master/4.x/build-strategies/build.md)
-#### [Binary Build](https://github.com/abalasu1/Openshift/blob/master/4.x/build-strategies/build.md#binary-build)
+#### [Docker Build](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/build-strategies/build.md#docker-build)
+#### [Binary Build](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/build-strategies/build.md#binary-build)
 
 ## EX 288-4.5
 

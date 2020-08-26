@@ -22,7 +22,7 @@ spec:
         run: nginx
     spec:
       containers:
-      - image: image-registry.openshift-image-registry:5000/broken/nginx
+      - image: default-route-openshift-image-registry.appdev-cloudnative-ocp43-6fb0b86391cd68c8282858623a1dddff-0000.eu-gb.containers.appdomain.cloud/broken/nginx
         name: nginx
         resources: {}
 ---

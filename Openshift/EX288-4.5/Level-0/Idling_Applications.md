@@ -47,4 +47,4 @@ curl $(oc get route nginx -o jsonpath='{.spec.host}')
 ```
 
 </p>
-</details
+</details>

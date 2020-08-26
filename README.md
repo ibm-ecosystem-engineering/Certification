@@ -16,4 +16,4 @@
 ## EX 288-4.5
 
 ### Level-0
-#### [Idling applications](EX288-4.5/Level-0/Idling_Applications.md)
+#### [Idling applications](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/EX288-4.5/Level-0/Idling_Applications.md)

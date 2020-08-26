@@ -12,7 +12,7 @@
 
 ### Productivity
 #### [Create apps with cli](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Tips%20%26%20Tricks.md#how-to-create-deployments-jobs--pods)
-#### [Create Aliases]()
+#### [Create Aliases](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Tips%20%26%20Tricks.md#minimize-typing-by-creating-alises-for-commonly-used-commands)
 
 ## How-To's
 

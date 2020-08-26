@@ -1,6 +1,11 @@
 # Build Strategies
 
 ## Docker Build
+### Create the project
+```
+oc new-project build-strategies
+```
+
 ### Create Imagestream
 ```
 oc apply -f imagestream.yaml
@@ -34,6 +39,10 @@ oc delete -f imagestream.yaml
 ```
 
 ## Binary Build
+### Create the project
+```
+oc new-project build-strategies
+```
 
 ### Create Imagestream
 ```

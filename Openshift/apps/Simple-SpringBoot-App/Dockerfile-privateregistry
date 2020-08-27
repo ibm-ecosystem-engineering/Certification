@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/openjdk-11 as build
+FROM image-registry.openshift-image-registry.svc:5000/build-strategies/openjdk-11 as build
 WORKDIR /tmp
 
 COPY mvnw .

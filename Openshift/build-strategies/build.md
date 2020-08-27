@@ -1,5 +1,14 @@
 # Build Strategies
 
+## For disconnected installations
+### In disconnected all the images needed should be in the internal registry
+
+#### Push the images needed to the internal registry (**This operation should be done on a machine whose cpu architecture matches the one where the cluster is running. For ex: if the cluster is on ppc64le, download the images on a power machine and push it to the cluster internal registry)
+If you are using podman on your local laptop
+```
+podman login 
+```
+
 ## Docker Build
 ### Create the project
 ```

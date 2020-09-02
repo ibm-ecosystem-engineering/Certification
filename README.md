@@ -29,15 +29,15 @@
 
 ## Work with container images
 
- ### Watch the Video Day 2 of DO180 Course (1 hour)
+ ### 1. Watch the Video Day 2 of DO180 Course (1 hour)
  
  ![RH DO180 Course](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Course.png)
 
-### Use command line utilities to manipulate container images
+### 2. Use command line utilities to manipulate container images
 
  ![RH DO180 Course](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Manage.png)
 
-### Optimize container images
+### 3. Optimize container images
 
  ![Create Custom Images](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Create.png)
 

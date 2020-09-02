@@ -40,6 +40,15 @@
 ### 3. Optimize container images
 
  ![Create Custom Images](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Create.png)
+ 
+### 4. Podman Manage Subcommands
+
+![Podman Manage Subcommands] (https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Podman-manage.png)
+
+ 
+### 5. Podman Query Subcommands
+
+![Podman Query Subcommands] (https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Podman-query.png)
 
 ### Resources
 

@@ -43,12 +43,12 @@
  
 ### 4. Podman Manage Subcommands
 
-![Podman Manage Subcommands] (https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Podman-manage.png)
+![Podman Manage Subcommands](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Podman-manage.png)
 
  
 ### 5. Podman Query Subcommands
 
-![Podman Query Subcommands] (https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Podman-query.png)
+![Podman Query Subcommands](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Podman-query.png)
 
 ### Resources
 

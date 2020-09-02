@@ -50,7 +50,11 @@
 
 ![Podman Query Subcommands](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Podman-query.png)
 
-### Resources
+### 6. Podman CLI Commands
+
+![Podman CLI Subcommands](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Podman-cli.png)
+
+### 7. Resources
 
  - [Podman basics PDF](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/podman_basics.pdf)
  - Play with Podman CLI on ur laptop or use the RH Learning subscription (Chapter 3 & 4 from student guide) 

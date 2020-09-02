@@ -41,10 +41,9 @@
 
  ![Create Custom Images](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Create.png)
 
-
-    -[Podman basics PDF](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/podman_basics.pdf)
-    -Play with Podman CLI on ur laptop or use the RH Learning subscription (Chapter 3 & 4 from student guide) 
-    -Podman Tutorials](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/building_running_and_managing_containers/container-command-line-reference_building-running-and-managing-containers)
+ -[Podman basics PDF](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/podman_basics.pdf)
+ -Play with Podman CLI on ur laptop or use the RH Learning subscription (Chapter 3 & 4 from student guide) 
+ -Podman Tutorials](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/building_running_and_managing_containers/container-command-line-reference_building-running-and-managing-containers)
 
 
  

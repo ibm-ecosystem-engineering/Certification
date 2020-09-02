@@ -28,11 +28,24 @@
 #### [Idling applications](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/EX288-4.5/Level-0/Idling_Applications.md)
 
 ### Work with container images
-- Use command line utilities to manipulate container images
-- Optimize container images
+
+ #### Watch the Video Day 2 of DO180 Course (1 hour)
+ 
+ ![RH DO180 Course](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Course.png)
+
+#### Use command line utilities to manipulate container images
+
+ ![RH DO180 Course](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Manage.png)
+
+#### Optimize container images
+
+ ![Create Custom Images](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/Create.png)
+
+
 
     - Refer the [Podman basics PDF](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/podman_basics.pdf)
     - Play with Podman CLI on ur laptop or use the RH Learning subscription
-    - Watch the Video Day 2 of DO180 Course (1 hour)
     - [Podman Tutorials](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/building_running_and_managing_containers/container-command-line-reference_building-running-and-managing-containers)
 
+
+ 

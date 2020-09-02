@@ -28,8 +28,11 @@
 #### [Idling applications](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/EX288-4.5/Level-0/Idling_Applications.md)
 
 ### Work with container images
-    Use command line utilities to manipulate container images
-    Optimize container images
-    
+Use command line utilities to manipulate container images
+Optimize container images
+
+Tips :
+    - Refer the Podman basics PDF
+    - Play with Podman CLI on ur laptop or use the RH Learning subscription
     - Watch the Video Day 2 of DO180 Course (1 hour)
 

@@ -24,7 +24,7 @@
 
 ### Working with container images
 
-#### [Podman](./podman/README.md)
+#### [Podman](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/podman/README.md)
 
 ## EX 288-4.5
 

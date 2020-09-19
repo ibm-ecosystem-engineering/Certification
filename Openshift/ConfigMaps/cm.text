@@ -1,0 +1,67 @@
+- When deploying applications to OpenShift, configuration management presents a challenge due to the immutable nature of containers.
+
+- Unlike traditional,non-containerized deployments, it is not recommended to couple the application with the configuration when 
+running containerized applications.
+
+- We have secrets & configmaps which store this config data.
+
+- Sensitive data is stored in secrets & non-sensitive data in config maps.
+
+- Configmaps can be used to store individual properties or even the entire config files/json data.
+
+- Configmaps are scoped to a namespace.
+
+- Configmap can be created based on a file, directory, or specified literal value.
+    Commands:
+    oc create cm <ConfigMapName> --from-file=<AbsolutePathToFile>
+    oc create cm <ConfigMapName> --from-literal <Key=Value>
+    Ex-
+    oc create cm appsec --from-file=myapp.sec
+    oc create cm myappconfig --from-literal APP_MSG="Test Message"
+
+    1 value can be passed in each flag. For having 2 Key-value pairs for the configmap,
+    use the "--from-literal" flag twice.
+
+
+- A single configmap may package one or more key/value pairs.
+
+- When you create a configuration map from a file, the key name will be the name of the file by default and the value will be the contents of the file.If the basename is
+an invalid key, you may specify an alternate key.
+
+- When you create a configuration map resource based on a directory, each file whose name is a valid key in the directory is stored in the configuration map. 
+Subdirectories, symbolic links, device files, and pipes are ignored. 
+
+- Configmaps can be injected to your application through environment variables & by mounting volumes
+  Commands:
+  oc set env <deployment or deploymentconfig or builcconfig>/<ResourceName> --from configmap/<ConfigMapName>
+  oc set volume <Resource>/<ResourceName> --add -t configmap -m <MountPath> --name <VolumeName> --configmap-name <ConfigMapName>
+  Ex-
+    oc set env deployment/myapp --from configmap/myappconfig
+    oc set volume deployment/myapp --add -t configmap -m /opt/app-root/secure --name myapp-vol01 --configmap-name appsec
+
+    
+- For security reasons, mounted volumes for these resources are backed by temporary file storage facilities (tmpfs) and never stored on a node. 
+
+- If your application only has a few simple configuration variables that can be read from environment variables or passed on the command line, 
+use environment variables to inject data from configuration maps and secrets. Environment variables are the preferred approach over mounting volumes inside the container. 
+
+- On the other hand, if your application has a large number of configuration variables, or if you are migrating a legacy application that makes extensive use of 
+configuration files, use the volume mount approach instead of creating an environment variable for each of the configuration variables.
+
+- Configmap can be added while creating a BuildConfig
+Ex-
+oc new-build openshift/wildfly-101-centos7~https://github.com/wildfly/quickstart.git --context-dir helloworld --build-config-map "settings-mvn"
+    
+- Configmap can be editted through 2  commands:
+    oc edit:
+    oc edit configmap/<ConfigMapName> 
+    Ex-
+      oc edit configmap/Test
+    Edit command opens the yaml file of the configmap in vi. It doesnot allow to save changes in case of any indentation errors.
+
+    oc patch:
+    oc patch configmap/<ConfigMapName> --patch '{"data":{ Data Fields to add/edit in key-value pairs }}'
+    Ex- 
+      oc patch cm/appsec --patch '{"data":{"test": "check"}}'
+    With patch command,you can provide a JSON object definition for just the setting you want to add or update. 
+

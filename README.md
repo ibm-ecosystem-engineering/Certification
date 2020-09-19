@@ -26,7 +26,7 @@
 
 #### [Podman](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/podman/README.md)
 
-#### [ConfigMaps](https://github.com/ibm-gsi-ecosystem/Certification/blob/master/Openshift/ConfigMaps/cm.text)
+#### [ConfigMaps](https://github.com/ibm-gsi-ecosystem/Certification/tree/master/Openshift/ConfigMaps/cm.text)
 
 ## EX 288-4.5
 

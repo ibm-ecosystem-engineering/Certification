@@ -5,7 +5,9 @@ This directory contains the content for EX280 certification
 # 1. Operators
 Understand following Operators in OpenShift:
 • network
+
 • ingress
+
 • storage
 • authentication 
 • console

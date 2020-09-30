@@ -29,7 +29,7 @@ changing a running container,
 troubleshoot CLI commands
 
 # 3. Authentication:   
-Authenticating Using the X.590 Certificate,
+Authenticating Using the X.509 Certificate,
 Authenticating Using the Virtual User,
 Deleting the Virtual User,
 Configuring the OAuth Custom Resource,

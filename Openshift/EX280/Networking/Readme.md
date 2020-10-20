@@ -101,6 +101,10 @@ Run the following oc get command as an administrative user to consult the SDN co
  ### Expose an application over HTTPS with passthrough termination using certificate singed by a CA
  * In this question, if it provides the CA key and cert, then you can sign your generated application key/cert with the provided CA key/cert. If it asks to use router-ca, then you can use steps mentioned above to pull router ca and key and use them to sign your generated application key/cert. If it asks to use self-signed certificate, you can use the step provided above to generate a self-signed key pair and use that.
  
- In the question
+ * After the application certificate and key are created, create a tls secret using the key/cert in the appropriate namespace
+ * Mount the secret onto deployment/dc at the mentioned mountPath
+ * Finally create a passthrough route to TLS port of the service; for example if service exposes port 8443 over TLS, then:
+ 
+ `oc create route passthrough passthrough-https --service=hello-world-test --port=8443 --hostname=hello-world-passthrough-httpsapps.myocp.os.fyre.ibm.com`
  
   

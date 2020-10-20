@@ -42,7 +42,18 @@ Run the following oc get command as an administrative user to consult the SDN co
  
  `curl http:\\hello-world-http.apps.myocp.os.fyre.ibm.com`
  
- ### Expose an application over HTTPS with edge termination
+ ### Expose an application over HTTPS with edge termination using default router certificate
+ * Since we need to use default router certificate, so we don't need to worry about the certificate. Just expose the route with edge option and it will automatically use router certificate.
+ 
+ `oc create route edge edge-https-hello --service=hello-world-test --hostname=hello-world-edge-https.apps.myocp.os.fyre.ibm.com`
+ 
+ Run `oc status` command to verify that route is pointing to right service and service is able to route to right pods
+ 
+ * Use curl command to check if route is working
+ 
+ `curl -k https://hello-world-edge-https.apps.myocp.os.fyre.ibm.com`
+ 
+ 
  
  
   

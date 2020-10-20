@@ -8,5 +8,14 @@ The DNS operator is responsible for the following:
 • Assigning DNS names to pods in a namespace (such as db001.backend.cluster.local).
 
 Run the below command to review the configuration of DNS operator
+
 `oc describe dns.operator/default`
+
+DNS is deployed as DaemonSet in openshift-dns namespace
+
+`oc get ds -n openshift-dns`
+
+`oc get pods -n openshift-dns`
+
+
 

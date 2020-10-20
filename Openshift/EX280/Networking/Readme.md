@@ -25,3 +25,6 @@ Run the following oc get command as an administrative user to consult the SDN co
 
 ## OpenShift Network Modes
 - NetworkPolicy mode is covered in exam
+- After declaring any network policy in a project, OpenShift defaults to preventing all ingress and egress traffic, unless you explicitly define a rule to allow network connections.
+
+### Expose an application over HTTP

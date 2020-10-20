@@ -24,3 +24,4 @@ Run the following oc get command as an administrative user to consult the SDN co
 `oc get Network cluster -o yaml`
 
 ## OpenShift Network Modes
+- NetworkPolicy mode is covered in exam

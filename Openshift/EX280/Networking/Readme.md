@@ -54,6 +54,21 @@ Run the following oc get command as an administrative user to consult the SDN co
  `curl -k https://hello-world-edge-https.apps.myocp.os.fyre.ibm.com`
  
  
+ ### Expose an application over HTTPS with edge termination using custom certificates
+ * Create a self-signed certificate using below openssl command. Give the common name 'hello-world-edge2-https.apps.myocp.os.fyre.ibm.com'
  
+ `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt`
+ 
+ * Create an edge route for the service 'hello-world-test' with the hostname 'hello-world-edge2-https.apps.myocp.os.fyre.ibm.com'
+ 
+ `oc create route edge edge2-https-hello --service=hello-world-test --hostname=hello-world-edge2-https.apps.myocp.os.fyre.ibm.com --key tls.key --cert tls.crt`
+ 
+ Run `oc status` command to verify that route is pointing to right service and service is able to route to right pods
+ 
+ * Use curl command to verify the generated key/cert has been used for TLS. You may verify it by using browser.
+ 
+ `curl -kv https://hello-world-edge2-https.apps.myocp.os.fyre.ibm.com`
+ 
+ `curl --cacert tls.crt https://hello-world-edge2-https.apps.myocp.os.fyre.ibm.com`
  
   

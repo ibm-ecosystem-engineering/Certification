@@ -72,7 +72,35 @@ Run the following oc get command as an administrative user to consult the SDN co
  `curl --cacert tls.crt https://hello-world-edge2-https.apps.myocp.os.fyre.ibm.com`
  
  ### Expose an application over HTTPS with edge termination using certificate singed by openshift router-ca
+ * Extract router-ca key and certificate.
+ 
+ `oc extract secrets/router-ca --keys tls.key -n openshift-ingress-operator`
+ 
+ `oc extract secrets/router-ca --keys tls.crt -n openshift-ingress-operator`
+ * Now generate a CSR for the hostname hello-world-edge3-https.apps.myocp.os.fyre.ibm.com. Generate a key for the application
+ Generate the key:
+ 
+ `openssl genrsa -out app.key 2048`
+ 
+ Generate the CSR:
+ `openssl req -new -subj "/CN=hello-world-edge3-https.apps.myocp.os.fyre.ibm.com" -key app.key -out app.csr`
+ 
+ Sign the CSR with router-ca CA:
+ 
+ `openssl x509 -req -in app.csr -CA tls.crt -CAkey tls.key -CAcreateserial -out app.crt -days 365 -sha256`
+ 
+ You can verify a x509 certificate using below command:
+ 
+ `openssl x509 -in app.crt -text -noout`
+ 
+ Now use the signed app.key and app.crt to generate an edge secure route
+ 
+ `oc create route edge edge3-https-hello --service=hello-world-test --hostname=hello-world-edge3-https.apps.myocp.os.fyre.ibm.com --key app.key --cert app.crt`
  
  
+ ### Expose an application over HTTPS with passthrough termination using certificate singed by a CA
+ * In this question, if it provides the CA key and cert, then you can sign your generated application key/cert with the provided CA key/cert. If it asks to use router-ca, then you can use steps mentioned above to pull router ca and key and use them to sign your generated application key/cert. If it asks to use self-signed certificate, you can use the step provided above to generate a self-signed key pair and use that.
+ 
+ In the question
  
   

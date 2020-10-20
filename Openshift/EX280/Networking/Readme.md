@@ -54,7 +54,7 @@ Run the following oc get command as an administrative user to consult the SDN co
  `curl -k https://hello-world-edge-https.apps.myocp.os.fyre.ibm.com`
  
  
- ### Expose an application over HTTPS with edge termination using custom certificates
+ ### Expose an application over HTTPS with edge termination using self-signed certificates
  * Create a self-signed certificate using below openssl command. Give the common name 'hello-world-edge2-https.apps.myocp.os.fyre.ibm.com'
  
  `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt`
@@ -70,5 +70,9 @@ Run the following oc get command as an administrative user to consult the SDN co
  `curl -kv https://hello-world-edge2-https.apps.myocp.os.fyre.ibm.com`
  
  `curl --cacert tls.crt https://hello-world-edge2-https.apps.myocp.os.fyre.ibm.com`
+ 
+ ### Expose an application over HTTPS with edge termination using certificate singed by openshift router-ca
+ 
+ 
  
   

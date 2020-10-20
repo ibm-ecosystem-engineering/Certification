@@ -17,5 +17,10 @@ DNS is deployed as DaemonSet in openshift-dns namespace
 
 `oc get pods -n openshift-dns`
 
+## Cluster Network Operator
+OpenShift Container Platform uses the Cluster Network Operator for managing the SDN. This includes the network CIDR to use, the network mode, the network provider, and the IP address pools.
+Run the following oc get command as an administrative user to consult the SDN configuration, which is managed by the Network.config.openshift.io custom resource definition.
 
+`oc get Network cluster -o yaml`
 
+## OpenShift Network Modes

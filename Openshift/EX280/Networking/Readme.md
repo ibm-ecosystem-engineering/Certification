@@ -1,5 +1,5 @@
 ## TLS Handshake Process
-
+<img src="images/TLS Handshake.png">
 
 * ClusterIP service type is covered in the exam
 
